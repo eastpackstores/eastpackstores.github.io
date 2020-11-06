@@ -1,0 +1,126 @@
+:root {
+	--light: 80;
+	--threshold: 60;
+}
+.body{
+	background-image: url(../images/general/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	margin: 0;
+	--switch: calc((var(--light) - var(--threshold)) * -100%);
+	color: hsl(0, 0%, var(--switch));
+}
+#menu{
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+#menu li{
+	 -moz-osx-font-smoothing: grayscale;
+	 -webkit-font-smoothing: antialiased;
+	 border-right: 2px solid #000;
+	 padding-left: 22px;
+	 padding-right: 26px;
+	 float: left;
+	 font-family: 'Roboto', 'sans-serif';
+	 font-size: 14px;
+	 color:#fff;
+	 list-style: none;
+	 text-transform: uppercase;
+	 font-weight: 700;
+}
+#menu li a{
+	color:#fff;
+	text-decoration: none;
+}
+.dropbtn {
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+	text-transform: none;
+ 	text-decoration: none;
+	 display: block;
+	 font-size: 12px;
+	 font-family: 'courier new';
+	 background-color: transparent;
+	 padding-top: 10px;
+}
+.dropdown-content a:hover {background-color: transparent;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: ;}
+
+.team img{
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.col-sm-3 img{
+	width: 292px;
+	height: 192px;
+}
+.page h1{
+	text-align: center;
+	font-family: 'courier new';
+	font-size: 50px;
+	font-weight: 900;
+	letter-spacing: 10px;
+	color: #fff;
+}
+.page h2{
+	text-align: center;
+	font-family: 'Ubuntu Mono';
+	font-size: 28px;
+	color: #fff;
+}
+.info {
+	
+	font-family: 'courier new';
+	font-size: 20px;
+	margin-bottom: 33px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.blog h1{
+	text-align: center;
+}
+.blog li{
+	margin-left: 107px;
+	margin-right: 107px;
+	margin-bottom: 7px;
+}
+#contacts{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+#contacts a{
+	padding-left: 16px;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#footer{
+	text-align: center;
+	font-family: 'Ubuntu Mono';
+	font-size: medium;
+}
